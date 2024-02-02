@@ -1,0 +1,40 @@
+.boardPlace {
+  display: flex;
+  flex-direction: row;
+  gap: 18px
+}
+
+.board {
+  height: fit-content;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 350px;
+  align-items: center;
+  border: 3px solid rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  background-color: rgba(63, 60, 87, 0.78);
+  padding-bottom: 60px;
+}
+
+.boardTitle {
+  padding: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.boardItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #68667b;
+  width: 100%;
+  min-height: 42px;
+
+  &:nth-child(2n) {
+    background-color: #5e5b6c;
+  }
+}
